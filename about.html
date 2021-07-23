@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Event Management Website</title>
+   
+</head>
+<body>
+   
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="Cherish logo.png ">
+            </nav>
+               
+               
+                <div id="NavLinks">
+                    <nav>
+                   
+                   
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="events.html">EVENTS</a></li>
+                       
+                       <li><a href="contact.html">CONTACT</a></li>
+                        
+                    </ul>
+                </nav>
+                </div>
+                <div id="menubtn"> 
+                    <img src="menu.png" id="menu" >
+
+                </div>
+
+            </a>
+        <h1>About Us</h1>
+    </section>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1></h1>
+                <p>Our company was started in the year 2020 by a group of young college students as an initiative to help people organise their special events.We're one of the most seeked event management companies across India. Moments are temporary, but memories are forever! Our vision is to help people enjoy their special moments and cherish it forever. We've had over 120+ happy clients from all over India. We always try to understand the culture of people from different parts of the country and try to provide them emotional fulfillment. Our staffs are experienced for over 5+ years. We organise varieties of events. Contact us to help you! </p>
+                <a class="hero-btn brown-btn" id="events">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="about.jpg" class="responsive"  >
+                <img src="about2.png" class="responsive" >
+            </div>
+            <div class="client">
+                <img src="client.jpg"   class="center">
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h1>Client's Voices</h1>
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="client2.jpeg" >
+            <div>
+                <p>I had seeked the help of Cherish for my parents' 50th anniversary. The event was all that I wanted it to be. The staff are super helpful and creative. Kudos to the team! </p>
+        <h3>Krithika Sehgal</h3>
+        <i class="fas fa-star" ></i>
+        <i class="fas fa-star" ></i>
+        <i class="fas fa-star" ></i>
+        <i class="fas fa-star" ></i>
+        <i class="far fa-star" ></i>
+    
+            </div></div>
+      
+      
+            <div class="testimonials-col">
+                <img src="client3.jpg" >
+                <div>
+                    <p>My sister's wedding was organised by Cherish. It was amazing. Starting from the staff's approach to actually executing the ideas. My sister was very much overwhlmed and so were we!Thank you Cherish!</p>
+            <h3>Ishita </h3>
+            <i class="fas fa-star" ></i>
+            <i class="fas fa-star" ></i>
+            <i class="fas fa-star" ></i>
+            <i class="fas fa-star" ></i>
+            <i class="far fa-star" ></i>
+        
+               
+    </div>
+    </div></div>
+      
+    </section>
+    
+    
+    
+
+    <section class="footer">
+        <h4>Reach Out To Us</h4>
+        <p>Reach Out with all your heart, to your Divine-Dreams!</p>
+    <div class="icons">
+        <i class="fab fa-facebook" ></i>
+        <i class="fab fa-twitter" ></i>
+        <i class="fab fa-instagram" ></i>
+        <i class="fab fa-linkedin" ></i>
+    
+    </div><p>Made with <i class="far fa-heart" ></i> by Cherish</p>
+    </section>
+
+    <script>
+        var menubtn= document.getElementById("menubtn");
+        var NavLinks= document.getElementById("NavLinks");
+        var menu= document.getElementById("menu");
+        NavLinks.style.right="-250px";
+        menubtn.onclick=function(){
+            if(NavLinks.style.right =="-250px"){
+                NavLinks.style.right="0";
+                menu.src="close.png";
+            }
+            else{
+                NavLinks.style.right="-250px"
+                menu.src="menu.png";
+            }
+        }
+        var events=document.getElementById("events");
+        events.onclick=function(){
+            location.href="events.html";
+        }
+        
+    </script>
+    
+</body>
+
+</html>
