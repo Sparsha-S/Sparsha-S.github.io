@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Event Management Website</title>
+    
+</head>
+<body>
+   
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="Cherish logo.png ">
+            </nav>
+               
+               
+                <div id="NavLinks">
+                    <nav>
+                   
+                   
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="events.html">EVENTS</a></li>
+                       <li><a href="contact.html">CONTACT</a></li>
+                        
+                    </ul>
+                </nav>
+                </div>
+                <div id="menubtn"> 
+                    <img src="menu.png" id="menu" >
+
+                </div>
+
+            </a>
+            
+       
+        <div class="text-box">
+            <h1>Welcome Amigos!</h1>
+            <p> 
+                Cherish those moments that once "Captured" you and today still "Captivate" you! <br>
+                 We are here to help you make those moments more beautiful and memorable!
+            </p>
+            <a class="hero-btn" id="visit">Visit us to know more</a>
+        </div>
+    </section>
+    
+    
+
+    <script>
+        var menubtn= document.getElementById("menubtn");
+        var NavLinks= document.getElementById("NavLinks");
+        var menu= document.getElementById("menu");
+        NavLinks.style.right="-250px";
+        menubtn.onclick=function(){
+            if(NavLinks.style.right =="-250px"){
+                NavLinks.style.right="0";
+                menu.src="close.png";
+            }
+            else{
+                NavLinks.style.right="-250px"
+                menu.src="menu.png";
+            }
+        }
+        var visit=document.getElementById("visit");
+        visit.onclick=function(){
+            location.href="about.html";
+        }
+        
+        
+    </script>
+    
+</body>
+
+</html>

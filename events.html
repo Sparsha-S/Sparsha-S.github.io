@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Event Management Website</title>
+    
+</head>
+<body>
+   
+    <section class="sub-header2">
+        <nav>
+            <a href="index.html">
+                <img src="Cherish logo.png ">
+            </nav>
+               
+               
+                <div id="NavLinks">
+                    <nav>
+                   
+                   
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="events.html">EVENTS</a></li>
+                   
+						<li><a href="contact.html">CONTACT</a></li>
+                        
+                    </ul>
+                </nav>
+                </div>
+                <div id="menubtn"> 
+                    <img src="images/menu.png" id="menu" >
+
+                </div>
+
+            </a>
+       
+        <h1>Events</h1>
+    </section>
+    <section class="events">
+        <h1>Events Organised By Us</h1>
+        <div class="row">
+            <div class="events-col">
+                <h3>Birthday Bashes</h3>
+                <img src="bday1.jpg" class="responsive">
+                <p>Live your life with smiles, not tears. Beat your age with friends and not years.Birthdays are the only days when everyone feels special. That day makes up for all the sad days. It's a day when you will be pampered. Such special days should be celebrated to their fullest. These are the only days when people appreciate and remember you for who you really are! </p>
+                
+            </div>
+            <div class="events-col">
+                <h3>Weddings</h3>
+                <img src="wedding.jpeg" class="responsive">
+                <p>Two different souls, with different aspirations, dreams and goals. Binding them together with a common string called "Love" is this day! This day marks the beginning of an eternity! It not just brings two different people together, but merges a whole of two new worlds together to build their own new world. It adds not just one person but a whole family to the other's life! This day has to be celebrated with joy and delight! </p>
+                
+            </div>
+            <div class="events-col">
+                <h3>Graduation Parties</h3>
+                 <img src="Grad.jpg" class="responsive">
+                <p>Student life is by far the most loved period in everyone's life. No matter where you are or what you are doing , student life always brings back the memories of the best days of your life. Days when we were completely innocent and loved by all! The end of such a beautiful phase of life needs to be cherished with our loved ones. Graduation Parties may be a Goodbye to our student life, but it also marks the starting of the new,adventurous life ahead us! </p>
+                
+            </div>
+            <div class="events-col">
+                <h3>Anniversaries </h3>
+                <img src="anniversary.jpg" class="responsive">
+                <p>The wedding may long be over, but each passing year in marriage is still a milestone worthy of celebration. Among the many memorable moments for couples—where they met, their first date, their first kiss—their wedding day rises to the top. Love and marriage isn't always easy, which is why celebrating anniversaries are so important; the day serves as a reminder to the couple of the reasons they fell in love, the promises they made to one another and the hopes and dreams that lie ahead. </p>
+                
+            </div>
+            <div class="events-col">
+                <h3>Company Parties</h3>
+                <img src="company.jpg" class="responsive">
+                <p>Company Parties are a break from the hectic corporate life for everyone. These parties help in getting to know people's colleagues better. It is also an event to network and build strong realtionship with the company. Business opportunities are like buses, there's always another one coming. These parties are a way for that. </p>
+                
+            </div>
+            <button class="hero-btn gold-btn " id="check">Check out our decorations</button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>Reach Out To Us</h4>
+        <p>Reach Out with all your heart, to your Divine-Dreams!</p>
+    <div class="icons">
+        <i class="fab fa-facebook" ></i>
+        <i class="fab fa-twitter" ></i>
+        <i class="fab fa-instagram" ></i>
+        <i class="fab fa-linkedin" ></i>
+    
+    </div><p>Made with <i class="far fa-heart" ></i> by Cherish</p>
+    </section>
+
+    <script>
+        var menubtn= document.getElementById("menubtn");
+        var NavLinks= document.getElementById("NavLinks");
+        var menu= document.getElementById("menu");
+        NavLinks.style.right="-250px";
+        menubtn.onclick=function(){
+            if(NavLinks.style.right =="-250px"){
+                NavLinks.style.right="0";
+                menu.src="close.png";
+            }
+            else{
+                NavLinks.style.right="-250px"
+                menu.src="menu.png";
+            }
+        }
+        var check=document.getElementById("check");
+        check.onclick=function(){
+            location.href="decors.html";
+        }
+        
+    </script>
+    
+</body>
+
+</html>

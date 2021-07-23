@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Event Management Website</title>
+    
+</head>
+<body>
+   
+    <section class="sub-header3">
+        <nav>
+            <a href="index.html">
+                <img src="Cherish logo.png ">
+            </nav>
+               
+               
+                <div id="NavLinks">
+                    <nav>
+                   
+                   
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="events.html">EVENTS</a></li>
+                        
+						<li><a href="contact.html">CONTACT</a></li>
+                        
+                        
+                    </ul>
+                </nav>
+                </div>
+                <div id="menubtn"> 
+                    <img src="menu.png" id="menu" >
+
+                </div>
+
+            </a>
+       
+        <h1>Contact Us</h1>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home" ></i>
+                    <span>
+                        <h5>XYZ Road,ABC Building</h5>
+                        <p>Salem,Tamil Nadu IN</p>
+                    </span>
+                </div>
+                
+				<div>
+					<i class="fas fa-phone-alt" ></i>
+					<span>
+						<h5>+1 2345678901</h5>
+						<p>Monday to Saturday, 10AM to 7PM</p>
+					</span>
+				</div>
+				<div>
+					<i class="far fa-envelope" ></i>
+					<span>
+						<h5>sparshasakthivel04@gmail.com</h5>
+						<p>Email us your query</p>
+					</span>
+				</div>
+				<br>
+				<div><a href="https://forms.gle/K1zjHc9NfGke6Nqy7">Fill Out this form to reach us immediately!</a></div>
+				
+                
+            
+        </div>  </div>
+    </section>
+
+    <section class="footer">
+        <h4>Reach Out To Us</h4>
+        <p>Reach Out with all your heart, to your Divine-Dreams!</p>
+    <div class="icons">
+        <i class="fab fa-facebook" ></i>
+        <i class="fab fa-twitter" ></i>
+        <i class="fab fa-instagram" ></i>
+        <i class="fab fa-linkedin" ></i>
+    
+    </div><p>Made with <i class="far fa-heart" ></i> by Cherish</p>
+    </section>
+
+    <script>
+        var menubtn= document.getElementById("menubtn");
+        var NavLinks= document.getElementById("NavLinks");
+        var menu= document.getElementById("menu");
+        NavLinks.style.right="-250px";
+        menubtn.onclick=function(){
+            if(NavLinks.style.right =="-250px"){
+                NavLinks.style.right="0";
+                menu.src="close.png";
+            }
+            else{
+                NavLinks.style.right="-250px"
+                menu.src="menu.png";
+            }
+        }
+        
+    </script>
+    
+</body>
+
+</html>
