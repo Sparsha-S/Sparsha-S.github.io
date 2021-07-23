@@ -351,14 +351,8 @@ nav .fa{
            float:bottom;
             padding-right: 50px;
         }
-        .icons .far{
-            color:rgb(220, 20, 220);
-            cursor:pointer;
-            padding: 18px 0;
-            margin: 0 13px;
-        
-        }
-.contact-col div .fa{
+       
+.contact-col div .far{
             font-size: 28px;
             margin: 10px;
             color: rgb(220, 20, 220);
